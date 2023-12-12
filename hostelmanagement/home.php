@@ -212,7 +212,12 @@ $_SESSION['last_activity'] = time();
 
 				<div class="list-footer">
 					<ul class="footer-nav text-center">
-						<div>
+						<style>
+							.contact-us-div{
+								color: white;
+							}
+						</style>
+						<div class="contact-us-div">
 							<h5><b>Contact Us</b></h5>
 							Shri Madhwa Vadiraja Institute Of Technology and Management
 							<br />
@@ -225,7 +230,7 @@ $_SESSION['last_activity'] = time();
 							<li>
 								<a href="info@sode-edu.in"></a>
 							</li>
-							Email:info@sode-edu.in
+						Email:info@sode-edu.in
 						</div>
 					</ul>
 				</div>
