@@ -174,7 +174,7 @@ $_SESSION['last_activity'] = time();?>
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitk.ac.in/" target="_blank">SMVTIM <span class="display"> BANTAKAL</span></a>
+			<a class="navbar-brand" href="https://sode-edu.in/" target="_blank">SMVTIM <span class="display"> BANTAKAL</span></a>
 		</div>
 		<div class="footer-grid">
 
