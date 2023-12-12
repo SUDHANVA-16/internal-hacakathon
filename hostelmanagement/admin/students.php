@@ -48,7 +48,7 @@ session_start();
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-				<h1><a class="navbar-brand" href="admin_home.php">NITK <span class="display"> </span></a></h1>
+				<h1><a class="navbar-brand" href="admin_home.php">SMVITM <span class="display"> </span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -191,25 +191,41 @@ session_start();
       }
       else{
       	while($row1 = mysqli_fetch_assoc($result1)){
-      		//get the room_no of the student from room_id in room table
-            $room_id = $row1['Room_id'];
-            $HID = $row1['Hostel_id'];
-            $query7 = "SELECT * FROM Room WHERE Room_id = '$room_id'";
-            $result7 = mysqli_query($conn,$query7);
-            $row7 = mysqli_fetch_assoc($result7);
-            $room_no = $row7['Room_No'];
-            $query99 = "SELECT * FROM Hostel WHERE Hostel_id = '$HID'";
-            $result99 = mysqli_query($conn,$query99);
-            $row99 = mysqli_fetch_assoc($result99);
-            $HNM = $row99['Hostel_name'];
-            if (!$HNM) {
-              $HNM='None';
-            }
-            if(!$room_no){
-              $room_no='None';
-            }
-            //student name
-            $student_name = $row1['Fname']." ".$row1['Lname'];
+                    // Get the room_no of the student from room_id in room table
+        $room_id = $row1['Room_id'];
+        $HID = $row1['Hostel_id'];
+
+        // Query to get room information
+        $query7 = "SELECT * FROM Room WHERE Room_id = '$room_id'";
+        $result7 = mysqli_query($conn, $query7);
+
+        if (!$result7) {
+            die("Query failed: " . mysqli_error($conn));
+        }
+
+        $row7 = mysqli_fetch_assoc($result7);
+
+        // Check if $row7 is not null and has the key 'Room_No'
+        $room_no = ($row7 && isset($row7['Room_No'])) ? $row7['Room_No'] : 'None';
+
+        // Query to get hostel information
+        $query99 = "SELECT * FROM Hostel WHERE Hostel_id = '$HID'";
+        $result99 = mysqli_query($conn, $query99);
+
+        if (!$result99) {
+            die("Query failed: " . mysqli_error($conn));
+        }
+
+        $row99 = mysqli_fetch_assoc($result99);
+
+        // Check if $row99 is not null and has the key 'Hostel_name'
+        $HNM = ($row99 && isset($row99['Hostel_name'])) ? $row99['Hostel_name'] : 'None';
+
+        // Student name
+        $student_name = $row1['Fname'] . " " . $row1['Lname'];
+
+        // Output or use the variables as needed
+
 
       		echo "<tr><td>{$student_name}</td><td>{$row1['Student_id']}</td><td>{$row1['Mob_no']}</td><td>{$HNM}</td><td>{$room_no}</td></tr>\n";
       	}
@@ -226,7 +242,7 @@ session_start();
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitk.ac.in/" target="_blank">NITK <span class="display"> SURATHKAL</span></a>
+			<a class="navbar-brand" href="https://sode-edu.in/" target="_blank">SMVITM <span class="display"> BANTAKAL</span></a>
 		</div>
 		<div class="footer-grid">
 
@@ -312,3 +328,10 @@ session_start();
 
 </body>
 </html>
+
+
+
+
+
+
+paste this in students.php which is present inside the admin folder
