@@ -50,7 +50,7 @@ session_start();
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-				<h1><a class="navbar-brand" href="home_manager.php">NITK <span class="display"></span></a></h1>
+				<h1><a class="navbar-brand" href="home_manager.php">SMVITM <span class="display"></span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -221,7 +221,7 @@ session_start();
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitc.ac.in/" target="_blank">NITK <span class="display"> SURATHKAL</span></a>
+			<a class="navbar-brand" href="https://sode-edu.in/" target="_blank">SMVITM <span class="display"> BANTAKAL</span></a>
 		</div>
 		<div class="footer-grid">
 			<div class="list-footer">

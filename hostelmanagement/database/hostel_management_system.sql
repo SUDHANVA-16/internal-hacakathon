@@ -140,7 +140,7 @@ CREATE TABLE `Hostel_Manager` (
 
 LOCK TABLES `Hostel_Manager` WRITE;
 /*!40000 ALTER TABLE `Hostel_Manager` DISABLE KEYS */;
-INSERT INTO `Hostel_Manager` VALUES (1,'mainadmin','Admin','NITK','987654321',1,1,'trial',1),(2,'hostelA','Hostel','A','987654321',1,1,'$2y$10$QImNrErR0Bj5Ns9Gm/CKbulEPWNj9YBpihk6JWg4Ipx.pcEev6gHq',0),(3,'hostelB','Hostel','B','987654321',2,2,'$2y$10$Xdfrgvx5EvVWMzfzwIyTb./igun.DZMp5XxBXWnME5s0IjtGgovDu',0),(4,'hostelC','Hostel','C','987654321',3,3,'$2y$10$7gpP8Q.krVUgulRBgxNOVejLPZN5PEEIoQr9xijdgDzeu9jvcpu5G',0),(5,'hostelD','Hostel','D','987654321',4,4,'$2y$10$inWxU5AcKQ8fLeufr6dYaeeLuvnhlh.N67XzqM4rZtg.xOsDWcBHu',0),(6,'hostelE','Hostel','E','987654321',5,5,'$2y$10$SpCXnzzahlCPOIVl2Eh1fePaUPtrpdAkvtrUXzF7W0xyusZS7nx/q',0),(7,'hostelF','Hostel','F','987654321',6,6,'$2y$10$8b849FWoiZkfa5uRK52jYulD0llS6hOdkw7Srh0TQJO/JoVQvmLSi',0);
+INSERT INTO `Hostel_Manager` VALUES (1,'mainadmin','Admin','SMVITM','987654321',1,1,'trial',1),(2,'hostelA','Hostel','A','987654321',1,1,'$2y$10$QImNrErR0Bj5Ns9Gm/CKbulEPWNj9YBpihk6JWg4Ipx.pcEev6gHq',0),(3,'hostelB','Hostel','B','987654321',2,2,'$2y$10$Xdfrgvx5EvVWMzfzwIyTb./igun.DZMp5XxBXWnME5s0IjtGgovDu',0),(4,'hostelC','Hostel','C','987654321',3,3,'$2y$10$7gpP8Q.krVUgulRBgxNOVejLPZN5PEEIoQr9xijdgDzeu9jvcpu5G',0),(5,'hostelD','Hostel','D','987654321',4,4,'$2y$10$inWxU5AcKQ8fLeufr6dYaeeLuvnhlh.N67XzqM4rZtg.xOsDWcBHu',0),(6,'hostelE','Hostel','E','987654321',5,5,'$2y$10$SpCXnzzahlCPOIVl2Eh1fePaUPtrpdAkvtrUXzF7W0xyusZS7nx/q',0),(7,'hostelF','Hostel','F','987654321',6,6,'$2y$10$8b849FWoiZkfa5uRK52jYulD0llS6hOdkw7Srh0TQJO/JoVQvmLSi',0);
 /*!40000 ALTER TABLE `Hostel_Manager` ENABLE KEYS */;
 UNLOCK TABLES;
 
